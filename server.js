@@ -6,9 +6,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const mongoose = require('mongoose');
-// const remoteUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.9jbfv.mongodb.net/wbdv?retryWrites=true&w=majority`
+const remoteUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.9jbfv.mongodb.net/wbdv?retryWrites=true&w=majority`
 
-const remoteUri = `mongodb+srv://ivyxue123:ivyxue123@cluster0.dojlk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+// const remoteUri = `mongodb+srv://ivyxue123:ivyxue123@cluster0.dojlk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 const localUri = `mongodb://localhost:27017/whiteboard-02`
 try {
   mongoose.connect(remoteUri,
